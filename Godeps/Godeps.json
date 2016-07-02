@@ -1,0 +1,31 @@
+{
+	"ImportPath": "github.com/blachniet/tingle",
+	"GoVersion": "go1.6",
+	"GodepVersion": "v74",
+	"Deps": [
+		{
+			"ImportPath": "github.com/Sirupsen/logrus",
+			"Comment": "v0.10.0-19-gf3cfb45",
+			"Rev": "f3cfb454f4c209e6668c95216c4744b8fddb2356"
+		},
+		{
+			"ImportPath": "github.com/influxdata/influxdb/client/v2",
+			"Comment": "v1.0.0-beta2-27-g0fc2593",
+			"Rev": "0fc259386850d725b1570bc77902c59591f8eae8"
+		},
+		{
+			"ImportPath": "github.com/influxdata/influxdb/models",
+			"Comment": "v1.0.0-beta2-27-g0fc2593",
+			"Rev": "0fc259386850d725b1570bc77902c59591f8eae8"
+		},
+		{
+			"ImportPath": "github.com/influxdata/influxdb/pkg/escape",
+			"Comment": "v1.0.0-beta2-27-g0fc2593",
+			"Rev": "0fc259386850d725b1570bc77902c59591f8eae8"
+		},
+		{
+			"ImportPath": "golang.org/x/sys/unix",
+			"Rev": "62bee037599929a6e9146f29d10dd5208c43507d"
+		}
+	]
+}

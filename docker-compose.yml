@@ -1,0 +1,24 @@
+version: '2'
+services:
+  tingle:
+    build: .
+    depends_on:
+      - influxdb
+    # Use either a local environment file or define
+    # your environment variables below.
+    env_file: ~/.tingle/tingle.env
+    #environment:
+      #- TINGLE_ROUTER_ADDR=192.168.1.1:23
+      #- TINGLE_ROUTER_USER=admin
+      #- TINGLE_ROUTER_PWD=password
+      #- TINGLE_INFLUXDB_HOST=http://influxdb:8086
+      #- TINGLE_INFLUXDB_NAME=tingle
+  influxdb:
+    image: influxdb:alpine
+    ports:
+      - "8083:8083"
+      - "8086:8086"
+  chronograf:
+    image: chronograf
+    ports:
+      - "10000:10000"
